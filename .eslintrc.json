@@ -1,0 +1,56 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "airbnb"
+  ],
+  "parser": "babel-eslint",
+  "env": {
+    "node": true
+  },
+  "plugins": [
+    "eslint-plugin-import"
+  ],
+  "rules": {
+    "import/prefer-default-export": "off",
+    "import/no-unresolved": "warn",
+    "no-unused-vars": "warn",
+    "no-duplicate-imports": "error",
+    "comma-spacing": "error",
+    "prefer-const": "error",
+    "consistent-return": "warn",
+    "no-await-in-loop": "off",
+    "no-restricted-globals": "warn",
+    "no-underscore-dangle": "warn",
+    "no-nested-ternary": "warn",
+    "no-extra-semi": "error",
+    "object-curly-spacing": [
+      2,
+      "always"
+    ],
+    "object-curly-newline": [
+      "error"
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "no-console": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": [
+          "./"
+        ]
+      }
+    }
+  }
+}
